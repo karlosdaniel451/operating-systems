@@ -26,7 +26,7 @@ def main():
 
 def do_something(seconds: float):
     """
-    Represents an I/O bound task.
+    Simulates an I/O bound task.
     """
 
     print(f'Sleeping for {seconds} second(s)...')
