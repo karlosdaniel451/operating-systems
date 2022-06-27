@@ -51,7 +51,7 @@ def process_image_with_gaussian_blur(img_name: str, blur_ratio: float,
 
     img = Image.open(f'./img/unprocessed/{img_name}')
 
-    img = img.filter(ImageFilter.GaussianBlur(15))
+    img = img.filter(ImageFilter.GaussianBlur(blur_ratio))
 
     img.thumbnail(thumbnail_size)
     img.save(f'./img/processed/processed_{img_name}')
